@@ -39,6 +39,17 @@ namespace Contact_Tracing
             file.WriteLine("Full Address: " + tbox11.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Tbox1.Text = "";
+            Tbox2.Text = "";
+            tbox3.Text = "";
+            tbox4.Text = "";
+            tbox5.Text = "";
+            tbox6.Text = "";
+            tbox7.Text = "";
+            tbox8.Text = "";
+            tbox9.Text = "";
+            tbox10.Text = "";
+            tbox11.Text = "";
         }
     }
 }
