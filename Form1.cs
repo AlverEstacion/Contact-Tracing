@@ -30,6 +30,9 @@ namespace Contact_Tracing
             file.WriteLine("Middle name: " + Tbox2.Text);
             file.WriteLine("Last name: " + tbox3.Text);
             file.WriteLine("Suffix: " + tbox4.Text);
+            file.WriteLine("Birth date: " + tbox5.Text);
+            file.WriteLine("Mobile No.: " + tbox6.Text);
+            file.WriteLine("Email: " + tbox7.Text);
             file.Close();
         }
     }
