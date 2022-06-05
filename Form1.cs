@@ -26,8 +26,9 @@ namespace Contact_Tracing
         private void btn1_Click(object sender, EventArgs e)
         {
             System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\OneDrive\Documents\Contact Tracing\test.text");
-            file.WriteLine("Firstname: " + Tbox1.Text);
-            file.WriteLine("Middlename: " + Tbox2.Text);
+            file.WriteLine("First name: " + Tbox1.Text);
+            file.WriteLine("Middle name: " + Tbox2.Text);
+            file.WriteLine("Last name: " + tbox3.Text);
             file.Close();
         }
     }
