@@ -46,6 +46,10 @@
             this.tbox3 = new System.Windows.Forms.TextBox();
             this.lbel5 = new System.Windows.Forms.Label();
             this.tbox4 = new System.Windows.Forms.TextBox();
+            this.lbel6 = new System.Windows.Forms.Label();
+            this.tbox5 = new System.Windows.Forms.TextBox();
+            this.lbel7 = new System.Windows.Forms.Label();
+            this.tbox6 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.Mntrp1.SuspendLayout();
             this.SuspendLayout();
@@ -206,10 +210,56 @@
             this.tbox4.Size = new System.Drawing.Size(206, 29);
             this.tbox4.TabIndex = 11;
             // 
+            // lbel6
+            // 
+            this.lbel6.AutoSize = true;
+            this.lbel6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbel6.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel6.Location = new System.Drawing.Point(12, 220);
+            this.lbel6.Name = "lbel6";
+            this.lbel6.Size = new System.Drawing.Size(104, 24);
+            this.lbel6.TabIndex = 12;
+            this.lbel6.Text = "Birth Date";
+            this.lbel6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tbox5
+            // 
+            this.tbox5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbox5.Location = new System.Drawing.Point(16, 247);
+            this.tbox5.Multiline = true;
+            this.tbox5.Name = "tbox5";
+            this.tbox5.Size = new System.Drawing.Size(206, 29);
+            this.tbox5.TabIndex = 13;
+            // 
+            // lbel7
+            // 
+            this.lbel7.AutoSize = true;
+            this.lbel7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbel7.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel7.Location = new System.Drawing.Point(259, 220);
+            this.lbel7.Name = "lbel7";
+            this.lbel7.Size = new System.Drawing.Size(148, 24);
+            this.lbel7.TabIndex = 14;
+            this.lbel7.Text = "Mobile Number";
+            this.lbel7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tbox6
+            // 
+            this.tbox6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbox6.Location = new System.Drawing.Point(263, 247);
+            this.tbox6.Multiline = true;
+            this.tbox6.Name = "tbox6";
+            this.tbox6.Size = new System.Drawing.Size(206, 29);
+            this.tbox6.TabIndex = 15;
+            // 
             // frm1
             // 
             this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(986, 672);
+            this.Controls.Add(this.tbox6);
+            this.Controls.Add(this.lbel7);
+            this.Controls.Add(this.tbox5);
+            this.Controls.Add(this.lbel6);
             this.Controls.Add(this.tbox4);
             this.Controls.Add(this.lbel5);
             this.Controls.Add(this.tbox3);
@@ -254,6 +304,10 @@
         private System.Windows.Forms.TextBox tbox3;
         private System.Windows.Forms.Label lbel5;
         private System.Windows.Forms.TextBox tbox4;
+        private System.Windows.Forms.Label lbel6;
+        private System.Windows.Forms.TextBox tbox5;
+        private System.Windows.Forms.Label lbel7;
+        private System.Windows.Forms.TextBox tbox6;
     }
 }
 
