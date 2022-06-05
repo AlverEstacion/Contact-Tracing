@@ -33,6 +33,9 @@ namespace Contact_Tracing
             file.WriteLine("Birth date: " + tbox5.Text);
             file.WriteLine("Mobile No.: " + tbox6.Text);
             file.WriteLine("Email: " + tbox7.Text);
+            file.WriteLine("Region: " + tbox8.Text);
+            file.WriteLine("City: " + tbox9.Text);
+            file.WriteLine("Barangay: " + tbox10.Text);
             file.Close();
         }
     }
