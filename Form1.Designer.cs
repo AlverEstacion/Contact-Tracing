@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm1));
-            this.lbel1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,19 +63,6 @@
             this.contextMenuStrip1.SuspendLayout();
             this.Mntrp1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbel1
-            // 
-            this.lbel1.AutoSize = true;
-            this.lbel1.BackColor = System.Drawing.Color.Peru;
-            this.lbel1.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel1.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbel1.Location = new System.Drawing.Point(269, 42);
-            this.lbel1.Name = "lbel1";
-            this.lbel1.Size = new System.Drawing.Size(475, 73);
-            this.lbel1.TabIndex = 0;
-            this.lbel1.Text = "Contact Tracing";
-            this.lbel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // contextMenuStrip1
             // 
@@ -148,8 +134,9 @@
             // lbel3
             // 
             this.lbel3.AutoSize = true;
+            this.lbel3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel3.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel3.Location = new System.Drawing.Point(259, 143);
             this.lbel3.Name = "lbel3";
             this.lbel3.Size = new System.Drawing.Size(129, 24);
@@ -178,8 +165,9 @@
             // lbel5
             // 
             this.lbel5.AutoSize = true;
+            this.lbel5.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel5.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel5.Location = new System.Drawing.Point(755, 143);
             this.lbel5.Name = "lbel5";
             this.lbel5.Size = new System.Drawing.Size(62, 24);
@@ -199,8 +187,9 @@
             // lbel6
             // 
             this.lbel6.AutoSize = true;
+            this.lbel6.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel6.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel6.Location = new System.Drawing.Point(12, 220);
             this.lbel6.Name = "lbel6";
             this.lbel6.Size = new System.Drawing.Size(104, 24);
@@ -220,8 +209,9 @@
             // lbel7
             // 
             this.lbel7.AutoSize = true;
+            this.lbel7.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel7.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel7.Location = new System.Drawing.Point(259, 220);
             this.lbel7.Name = "lbel7";
             this.lbel7.Size = new System.Drawing.Size(148, 24);
@@ -241,8 +231,9 @@
             // lbel2
             // 
             this.lbel2.AutoSize = true;
+            this.lbel2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel2.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel2.Location = new System.Drawing.Point(12, 143);
             this.lbel2.Name = "lbel2";
             this.lbel2.Size = new System.Drawing.Size(110, 24);
@@ -253,8 +244,9 @@
             // lbel4
             // 
             this.lbel4.AutoSize = true;
+            this.lbel4.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel4.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel4.Location = new System.Drawing.Point(501, 143);
             this.lbel4.Name = "lbel4";
             this.lbel4.Size = new System.Drawing.Size(108, 24);
@@ -265,8 +257,9 @@
             // lbel8
             // 
             this.lbel8.AutoSize = true;
+            this.lbel8.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel8.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel8.Location = new System.Drawing.Point(501, 220);
             this.lbel8.Name = "lbel8";
             this.lbel8.Size = new System.Drawing.Size(62, 24);
@@ -286,8 +279,9 @@
             // lbel9
             // 
             this.lbel9.AutoSize = true;
+            this.lbel9.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel9.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel9.Location = new System.Drawing.Point(12, 300);
             this.lbel9.Name = "lbel9";
             this.lbel9.Size = new System.Drawing.Size(73, 24);
@@ -307,8 +301,9 @@
             // lbel10
             // 
             this.lbel10.AutoSize = true;
+            this.lbel10.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel10.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel10.Location = new System.Drawing.Point(259, 300);
             this.lbel10.Name = "lbel10";
             this.lbel10.Size = new System.Drawing.Size(47, 24);
@@ -328,8 +323,9 @@
             // lbel11
             // 
             this.lbel11.AutoSize = true;
+            this.lbel11.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel11.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel11.Location = new System.Drawing.Point(501, 300);
             this.lbel11.Name = "lbel11";
             this.lbel11.Size = new System.Drawing.Size(98, 24);
@@ -349,8 +345,9 @@
             // lbel12
             // 
             this.lbel12.AutoSize = true;
+            this.lbel12.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lbel12.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel12.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbel12.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel12.Location = new System.Drawing.Point(12, 377);
             this.lbel12.Name = "lbel12";
             this.lbel12.Size = new System.Drawing.Size(120, 24);
@@ -369,9 +366,9 @@
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.Color.Peru;
+            this.btn1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btn1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn1.Location = new System.Drawing.Point(801, 360);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(149, 73);
@@ -383,6 +380,8 @@
             // frm1
             // 
             this.BackColor = System.Drawing.Color.Sienna;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(986, 454);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.tboxFulladd);
@@ -408,7 +407,7 @@
             this.Controls.Add(this.lbel3);
             this.Controls.Add(this.tboxFirstname);
             this.Controls.Add(this.Mntrp1);
-            this.Controls.Add(this.lbel1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Mntrp1;
             this.Name = "frm1";
@@ -427,7 +426,6 @@
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.TextBox tb1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbel1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
