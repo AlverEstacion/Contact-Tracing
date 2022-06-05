@@ -27,6 +27,7 @@ namespace Contact_Tracing
         {
             System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\OneDrive\Documents\Contact Tracing\test.text");
             file.WriteLine("Firstname: " + Tbox1.Text);
+            file.WriteLine("Middlename: " + Tbox2.Text);
             file.Close();
         }
     }
