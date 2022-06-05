@@ -1,0 +1,11 @@
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\Contact-Tracing.exe.config
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\Contact-Tracing.exe
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\Contact-Tracing.pdb
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.csproj.AssemblyReference.cache
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.frm1.resources
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Properties.Resources.resources
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.csproj.GenerateResource.cache
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.csproj.CoreCompileInputs.cache
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.exe
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.pdb

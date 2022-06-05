@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class frm1 : Form
     {
-        public Form1()
+        public frm1()
         {
             InitializeComponent();
+        }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Contact Trace was made by Jose Alver H. Estacion", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
