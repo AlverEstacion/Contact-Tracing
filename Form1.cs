@@ -25,31 +25,31 @@ namespace Contact_Tracing
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\OneDrive\Documents\Contact Tracing\test.text");
-            file.WriteLine("First name: " + Tbox1.Text);
-            file.WriteLine("Middle name: " + Tbox2.Text);
-            file.WriteLine("Last name: " + tbox3.Text);
-            file.WriteLine("Suffix: " + tbox4.Text);
-            file.WriteLine("Birth date: " + tbox5.Text);
-            file.WriteLine("Mobile No.: " + tbox6.Text);
-            file.WriteLine("Email: " + tbox7.Text);
-            file.WriteLine("Region: " + tbox8.Text);
-            file.WriteLine("City: " + tbox9.Text);
-            file.WriteLine("Barangay: " + tbox10.Text);
-            file.WriteLine("Full Address: " + tbox11.Text);
+            System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\OneDrive\Documents\Contact Tracing\" + tboxLastname.Text + ".text", true);
+            file.WriteLine("First name: " + tboxFirstname.Text);
+            file.WriteLine("Middle name: " + tboxSecondname.Text);
+            file.WriteLine("Last name: " + tboxLastname.Text);
+            file.WriteLine("Suffix: " + tboxSuffix.Text);
+            file.WriteLine("Birth date: " + tboxBirthDate.Text);
+            file.WriteLine("Mobile No.: " + tboxMobileNo.Text);
+            file.WriteLine("Email: " + tboxEmail.Text);
+            file.WriteLine("Region: " + tboxRegion.Text);
+            file.WriteLine("City: " + tboxCity.Text);
+            file.WriteLine("Barangay: " + tboxBarangay.Text);
+            file.WriteLine("Full Address: " + tboxFulladd.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Tbox1.Text = "";
-            Tbox2.Text = "";
-            tbox3.Text = "";
-            tbox4.Text = "";
-            tbox5.Text = "";
-            tbox6.Text = "";
-            tbox7.Text = "";
-            tbox8.Text = "";
-            tbox9.Text = "";
-            tbox10.Text = "";
-            tbox11.Text = "";
+            tboxFirstname.Text = "";
+            tboxSecondname.Text = "";
+            tboxLastname.Text = "";
+            tboxSuffix.Text = "";
+            tboxBirthDate.Text = "";
+            tboxMobileNo.Text = "";
+            tboxEmail.Text = "";
+            tboxRegion.Text = "";
+            tboxCity.Text = "";
+            tboxBarangay.Text = "";
+            tboxFulladd.Text = "";
         }
     }
 }
