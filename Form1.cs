@@ -36,6 +36,7 @@ namespace Contact_Tracing
             file.WriteLine("Region: " + tbox8.Text);
             file.WriteLine("City: " + tbox9.Text);
             file.WriteLine("Barangay: " + tbox10.Text);
+            file.WriteLine("Full Address: " + tbox11.Text);
             file.Close();
         }
     }
