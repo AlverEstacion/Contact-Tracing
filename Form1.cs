@@ -38,6 +38,7 @@ namespace Contact_Tracing
             file.WriteLine("Barangay: " + tbox10.Text);
             file.WriteLine("Full Address: " + tbox11.Text);
             file.Close();
+            MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
