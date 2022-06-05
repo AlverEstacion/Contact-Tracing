@@ -29,6 +29,7 @@ namespace Contact_Tracing
             file.WriteLine("First name: " + Tbox1.Text);
             file.WriteLine("Middle name: " + Tbox2.Text);
             file.WriteLine("Last name: " + tbox3.Text);
+            file.WriteLine("Suffix: " + tbox4.Text);
             file.Close();
         }
     }
