@@ -21,5 +21,15 @@ namespace Contact_Tracing
         {
             MessageBox.Show("This Contact Trace was made by Jose Alver H. Estacion", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbel4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
