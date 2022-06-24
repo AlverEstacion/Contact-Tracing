@@ -39,7 +39,7 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tboxFirstname = new System.Windows.Forms.TextBox();
             this.lbel3 = new System.Windows.Forms.Label();
-            this.tboxSecondname = new System.Windows.Forms.TextBox();
+            this.tboxmiddlename = new System.Windows.Forms.TextBox();
             this.tboxLastname = new System.Windows.Forms.TextBox();
             this.lbel5 = new System.Windows.Forms.Label();
             this.tboxSuffix = new System.Windows.Forms.TextBox();
@@ -57,11 +57,9 @@
             this.tboxCity = new System.Windows.Forms.TextBox();
             this.lbel11 = new System.Windows.Forms.Label();
             this.tboxBarangay = new System.Windows.Forms.TextBox();
-            this.lbel12 = new System.Windows.Forms.Label();
-            this.tboxFulladd = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
             this.Datelbl = new System.Windows.Forms.Label();
-            this.Datetbox = new System.Windows.Forms.TextBox();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.contextMenuStrip1.SuspendLayout();
             this.Mntrp1.SuspendLayout();
             this.SuspendLayout();
@@ -127,11 +125,15 @@
             // tboxFirstname
             // 
             this.tboxFirstname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxFirstname.ForeColor = System.Drawing.Color.Silver;
             this.tboxFirstname.Location = new System.Drawing.Point(16, 170);
             this.tboxFirstname.Multiline = true;
             this.tboxFirstname.Name = "tboxFirstname";
             this.tboxFirstname.Size = new System.Drawing.Size(206, 29);
             this.tboxFirstname.TabIndex = 5;
+            this.tboxFirstname.Text = "First name";
+            this.tboxFirstname.Enter += new System.EventHandler(this.tboxFirstname_Enter);
+            this.tboxFirstname.Leave += new System.EventHandler(this.tboxFirstname_Leave);
             // 
             // lbel3
             // 
@@ -146,23 +148,29 @@
             this.lbel3.Text = "Middle Name";
             this.lbel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tboxSecondname
+            // tboxmiddlename
             // 
-            this.tboxSecondname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxSecondname.Location = new System.Drawing.Point(259, 170);
-            this.tboxSecondname.Multiline = true;
-            this.tboxSecondname.Name = "tboxSecondname";
-            this.tboxSecondname.Size = new System.Drawing.Size(206, 29);
-            this.tboxSecondname.TabIndex = 7;
+            this.tboxmiddlename.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxmiddlename.ForeColor = System.Drawing.Color.Silver;
+            this.tboxmiddlename.Location = new System.Drawing.Point(259, 170);
+            this.tboxmiddlename.Multiline = true;
+            this.tboxmiddlename.Name = "tboxmiddlename";
+            this.tboxmiddlename.Size = new System.Drawing.Size(206, 29);
+            this.tboxmiddlename.TabIndex = 7;
+            this.tboxmiddlename.Text = "Middle name";
+            this.tboxmiddlename.Enter += new System.EventHandler(this.tboxmiddlename_Enter);
+            this.tboxmiddlename.Leave += new System.EventHandler(this.tboxmiddlename_Leave);
             // 
             // tboxLastname
             // 
             this.tboxLastname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxLastname.ForeColor = System.Drawing.Color.Silver;
             this.tboxLastname.Location = new System.Drawing.Point(505, 170);
             this.tboxLastname.Multiline = true;
             this.tboxLastname.Name = "tboxLastname";
             this.tboxLastname.Size = new System.Drawing.Size(206, 29);
             this.tboxLastname.TabIndex = 9;
+            this.tboxLastname.Text = "Last name";
             // 
             // lbel5
             // 
@@ -180,11 +188,13 @@
             // tboxSuffix
             // 
             this.tboxSuffix.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxSuffix.ForeColor = System.Drawing.Color.Silver;
             this.tboxSuffix.Location = new System.Drawing.Point(759, 170);
             this.tboxSuffix.Multiline = true;
             this.tboxSuffix.Name = "tboxSuffix";
             this.tboxSuffix.Size = new System.Drawing.Size(206, 29);
             this.tboxSuffix.TabIndex = 11;
+            this.tboxSuffix.Text = "Suffix(e.g. Sr., Jr., III)";
             // 
             // lbel6
             // 
@@ -202,11 +212,13 @@
             // tboxBirthDate
             // 
             this.tboxBirthDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxBirthDate.ForeColor = System.Drawing.Color.Silver;
             this.tboxBirthDate.Location = new System.Drawing.Point(16, 247);
             this.tboxBirthDate.Multiline = true;
             this.tboxBirthDate.Name = "tboxBirthDate";
             this.tboxBirthDate.Size = new System.Drawing.Size(206, 29);
             this.tboxBirthDate.TabIndex = 13;
+            this.tboxBirthDate.Text = "Birth Date";
             // 
             // lbel7
             // 
@@ -224,11 +236,13 @@
             // tboxMobileNo
             // 
             this.tboxMobileNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxMobileNo.ForeColor = System.Drawing.Color.Silver;
             this.tboxMobileNo.Location = new System.Drawing.Point(263, 247);
             this.tboxMobileNo.Multiline = true;
             this.tboxMobileNo.Name = "tboxMobileNo";
             this.tboxMobileNo.Size = new System.Drawing.Size(206, 29);
             this.tboxMobileNo.TabIndex = 15;
+            this.tboxMobileNo.Text = "Mobile No.";
             // 
             // lbel2
             // 
@@ -272,11 +286,13 @@
             // tboxEmail
             // 
             this.tboxEmail.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxEmail.ForeColor = System.Drawing.Color.Silver;
             this.tboxEmail.Location = new System.Drawing.Point(505, 247);
             this.tboxEmail.Multiline = true;
             this.tboxEmail.Name = "tboxEmail";
             this.tboxEmail.Size = new System.Drawing.Size(312, 29);
             this.tboxEmail.TabIndex = 19;
+            this.tboxEmail.Text = "Email";
             // 
             // lbel9
             // 
@@ -286,19 +302,21 @@
             this.lbel9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel9.Location = new System.Drawing.Point(12, 300);
             this.lbel9.Name = "lbel9";
-            this.lbel9.Size = new System.Drawing.Size(73, 24);
+            this.lbel9.Size = new System.Drawing.Size(65, 24);
             this.lbel9.TabIndex = 20;
-            this.lbel9.Text = "Region";
+            this.lbel9.Text = "St No.";
             this.lbel9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tboxRegion
             // 
             this.tboxRegion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxRegion.ForeColor = System.Drawing.Color.Silver;
             this.tboxRegion.Location = new System.Drawing.Point(16, 327);
             this.tboxRegion.Multiline = true;
             this.tboxRegion.Name = "tboxRegion";
             this.tboxRegion.Size = new System.Drawing.Size(206, 29);
             this.tboxRegion.TabIndex = 21;
+            this.tboxRegion.Text = "Region";
             // 
             // lbel10
             // 
@@ -308,19 +326,21 @@
             this.lbel10.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel10.Location = new System.Drawing.Point(259, 300);
             this.lbel10.Name = "lbel10";
-            this.lbel10.Size = new System.Drawing.Size(47, 24);
+            this.lbel10.Size = new System.Drawing.Size(176, 24);
             this.lbel10.TabIndex = 22;
-            this.lbel10.Text = "City";
+            this.lbel10.Text = "Street/Town Name";
             this.lbel10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tboxCity
             // 
             this.tboxCity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxCity.ForeColor = System.Drawing.Color.Silver;
             this.tboxCity.Location = new System.Drawing.Point(263, 327);
             this.tboxCity.Multiline = true;
             this.tboxCity.Name = "tboxCity";
             this.tboxCity.Size = new System.Drawing.Size(206, 29);
             this.tboxCity.TabIndex = 23;
+            this.tboxCity.Text = "City";
             // 
             // lbel11
             // 
@@ -330,41 +350,21 @@
             this.lbel11.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbel11.Location = new System.Drawing.Point(501, 300);
             this.lbel11.Name = "lbel11";
-            this.lbel11.Size = new System.Drawing.Size(98, 24);
+            this.lbel11.Size = new System.Drawing.Size(141, 24);
             this.lbel11.TabIndex = 24;
-            this.lbel11.Text = "Barangay";
+            this.lbel11.Text = "City/Provinces";
             this.lbel11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tboxBarangay
             // 
             this.tboxBarangay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxBarangay.ForeColor = System.Drawing.Color.Silver;
             this.tboxBarangay.Location = new System.Drawing.Point(505, 327);
             this.tboxBarangay.Multiline = true;
             this.tboxBarangay.Name = "tboxBarangay";
             this.tboxBarangay.Size = new System.Drawing.Size(206, 29);
             this.tboxBarangay.TabIndex = 25;
-            // 
-            // lbel12
-            // 
-            this.lbel12.AutoSize = true;
-            this.lbel12.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.lbel12.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel12.Location = new System.Drawing.Point(12, 377);
-            this.lbel12.Name = "lbel12";
-            this.lbel12.Size = new System.Drawing.Size(120, 24);
-            this.lbel12.TabIndex = 26;
-            this.lbel12.Text = "Full Address";
-            this.lbel12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tboxFulladd
-            // 
-            this.tboxFulladd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxFulladd.Location = new System.Drawing.Point(16, 404);
-            this.tboxFulladd.Multiline = true;
-            this.tboxFulladd.Name = "tboxFulladd";
-            this.tboxFulladd.Size = new System.Drawing.Size(513, 29);
-            this.tboxFulladd.TabIndex = 27;
+            this.tboxBarangay.Text = "Barangay";
             // 
             // btn1
             // 
@@ -384,22 +384,20 @@
             this.Datelbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.Datelbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Datelbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Datelbl.Location = new System.Drawing.Point(762, 297);
+            this.Datelbl.Location = new System.Drawing.Point(12, 374);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Datelbl.Size = new System.Drawing.Size(167, 25);
+            this.Datelbl.Size = new System.Drawing.Size(77, 25);
             this.Datelbl.TabIndex = 29;
-            this.Datelbl.Text = "Date:  M/D/Y";
+            this.Datelbl.Text = "Date";
             this.Datelbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Datetbox
+            // Date
             // 
-            this.Datetbox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datetbox.Location = new System.Drawing.Point(759, 325);
-            this.Datetbox.Multiline = true;
-            this.Datetbox.Name = "Datetbox";
-            this.Datetbox.Size = new System.Drawing.Size(170, 29);
-            this.Datetbox.TabIndex = 30;
+            this.Date.Location = new System.Drawing.Point(12, 404);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(200, 20);
+            this.Date.TabIndex = 31;
             // 
             // frm1
             // 
@@ -407,11 +405,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(986, 454);
-            this.Controls.Add(this.Datetbox);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.tboxFulladd);
-            this.Controls.Add(this.lbel12);
             this.Controls.Add(this.tboxBarangay);
             this.Controls.Add(this.lbel11);
             this.Controls.Add(this.tboxCity);
@@ -429,7 +425,7 @@
             this.Controls.Add(this.tboxSuffix);
             this.Controls.Add(this.lbel5);
             this.Controls.Add(this.tboxLastname);
-            this.Controls.Add(this.tboxSecondname);
+            this.Controls.Add(this.tboxmiddlename);
             this.Controls.Add(this.lbel3);
             this.Controls.Add(this.tboxFirstname);
             this.Controls.Add(this.Mntrp1);
@@ -461,7 +457,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.TextBox tboxFirstname;
         private System.Windows.Forms.Label lbel3;
-        private System.Windows.Forms.TextBox tboxSecondname;
+        private System.Windows.Forms.TextBox tboxmiddlename;
         private System.Windows.Forms.TextBox tboxLastname;
         private System.Windows.Forms.Label lbel5;
         private System.Windows.Forms.TextBox tboxSuffix;
@@ -479,11 +475,9 @@
         private System.Windows.Forms.TextBox tboxCity;
         private System.Windows.Forms.Label lbel11;
         private System.Windows.Forms.TextBox tboxBarangay;
-        private System.Windows.Forms.Label lbel12;
-        private System.Windows.Forms.TextBox tboxFulladd;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label Datelbl;
-        private System.Windows.Forms.TextBox Datetbox;
+        private System.Windows.Forms.DateTimePicker Date;
     }
 }
 

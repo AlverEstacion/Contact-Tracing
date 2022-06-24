@@ -27,7 +27,7 @@ namespace Contact_Tracing
         {
             System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\" + tboxLastname.Text + ", " + tboxFirstname.Text + ".txt", true);
             file.WriteLine("First name: " + tboxFirstname.Text);
-            file.WriteLine("Middle name: " + tboxSecondname.Text);
+            file.WriteLine("Middle name: " + tboxmiddlename.Text);
             file.WriteLine("Last name: " + tboxLastname.Text);
             file.WriteLine("Suffix: " + tboxSuffix.Text);
             file.WriteLine("Birth date: " + tboxBirthDate.Text);
@@ -36,12 +36,10 @@ namespace Contact_Tracing
             file.WriteLine("Region: " + tboxRegion.Text);
             file.WriteLine("City: " + tboxCity.Text);
             file.WriteLine("Barangay: " + tboxBarangay.Text);
-            file.WriteLine("Full Address: " + tboxFulladd.Text);
-            file.WriteLine("Date: " + Datetbox.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
             tboxFirstname.Text = "";
-            tboxSecondname.Text = "";
+            tboxmiddlename.Text = "";
             tboxLastname.Text = "";
             tboxSuffix.Text = "";
             tboxBirthDate.Text = "";
@@ -50,8 +48,41 @@ namespace Contact_Tracing
             tboxRegion.Text = "";
             tboxCity.Text = "";
             tboxBarangay.Text = "";
-            tboxFulladd.Text = "";
-            Datetbox.Text = "";
+        }
+        private void tboxFirstname_Enter(object sender, EventArgs e)
+        {
+            if (tboxFirstname.Text == "First name")
+            {
+                tboxFirstname.Text = "";
+                tboxFirstname.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxFirstname_Leave(object sender, EventArgs e)
+        {
+            if (tboxFirstname.Text == "")
+            {
+                tboxFirstname.Text = "First name";
+                tboxFirstname.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxmiddlename_Enter(object sender, EventArgs e)
+        {
+            if (tboxmiddlename.Text == "Middle name")
+            {
+                tboxmiddlename.Text = "";
+                tboxmiddlename.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxmiddlename_Leave(object sender, EventArgs e)
+        {
+            if (tboxmiddlename.Text == "")
+            {
+                tboxmiddlename.Text = "Middle name";
+                tboxmiddlename.ForeColor = Color.Silver;
+            }
         }
     }
 }
