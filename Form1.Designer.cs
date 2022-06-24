@@ -60,6 +60,8 @@
             this.lbel12 = new System.Windows.Forms.Label();
             this.tboxFulladd = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
+            this.Datelbl = new System.Windows.Forms.Label();
+            this.Datetbox = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.Mntrp1.SuspendLayout();
             this.SuspendLayout();
@@ -377,12 +379,36 @@
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // Datelbl
+            // 
+            this.Datelbl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.Datelbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelbl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Datelbl.Location = new System.Drawing.Point(762, 297);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Datelbl.Size = new System.Drawing.Size(167, 25);
+            this.Datelbl.TabIndex = 29;
+            this.Datelbl.Text = "Date:  M/D/Y";
+            this.Datelbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Datetbox
+            // 
+            this.Datetbox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datetbox.Location = new System.Drawing.Point(759, 325);
+            this.Datetbox.Multiline = true;
+            this.Datetbox.Name = "Datetbox";
+            this.Datetbox.Size = new System.Drawing.Size(170, 29);
+            this.Datetbox.TabIndex = 30;
+            // 
             // frm1
             // 
             this.BackColor = System.Drawing.Color.Sienna;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(986, 454);
+            this.Controls.Add(this.Datetbox);
+            this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.tboxFulladd);
             this.Controls.Add(this.lbel12);
@@ -456,6 +482,8 @@
         private System.Windows.Forms.Label lbel12;
         private System.Windows.Forms.TextBox tboxFulladd;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Label Datelbl;
+        private System.Windows.Forms.TextBox Datetbox;
     }
 }
 

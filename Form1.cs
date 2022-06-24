@@ -25,7 +25,7 @@ namespace Contact_Tracing
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\OneDrive\Documents\Contact Tracing\" + tboxLastname.Text + ".text", true);
+            System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\" + tboxLastname.Text + ", " + tboxFirstname.Text + ".txt", true);
             file.WriteLine("First name: " + tboxFirstname.Text);
             file.WriteLine("Middle name: " + tboxSecondname.Text);
             file.WriteLine("Last name: " + tboxLastname.Text);
@@ -37,6 +37,7 @@ namespace Contact_Tracing
             file.WriteLine("City: " + tboxCity.Text);
             file.WriteLine("Barangay: " + tboxBarangay.Text);
             file.WriteLine("Full Address: " + tboxFulladd.Text);
+            file.WriteLine("Date: " + Datetbox.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
             tboxFirstname.Text = "";
@@ -50,6 +51,7 @@ namespace Contact_Tracing
             tboxCity.Text = "";
             tboxBarangay.Text = "";
             tboxFulladd.Text = "";
+            Datetbox.Text = "";
         }
     }
 }
