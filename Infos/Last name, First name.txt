@@ -9,3 +9,13 @@ Region:
 City: 
 Barangay: 
 Full Address: 
+First name: First name
+Middle name: Middle name
+Last name: Last name
+Suffix: Suffix(e.g. Sr., Jr., III)
+Birth date: Birth Date
+Mobile No.: Mobile No.
+Email: 
+Region: Street No.
+City: Street/Town name
+Barangay: City/Provinces

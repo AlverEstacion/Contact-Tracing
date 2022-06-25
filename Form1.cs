@@ -33,21 +33,31 @@ namespace Contact_Tracing
             file.WriteLine("Birth date: " + tboxBirthDate.Text);
             file.WriteLine("Mobile No.: " + tboxMobileNo.Text);
             file.WriteLine("Email: " + tboxEmail.Text);
-            file.WriteLine("Region: " + tboxRegion.Text);
-            file.WriteLine("City: " + tboxCity.Text);
-            file.WriteLine("Barangay: " + tboxBarangay.Text);
+            file.WriteLine("Region: " + tboxst.Text);
+            file.WriteLine("City: " + tboxStname.Text);
+            file.WriteLine("Barangay: " + tboxcity.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            tboxFirstname.Text = "";
-            tboxmiddlename.Text = "";
-            tboxLastname.Text = "";
-            tboxSuffix.Text = "";
-            tboxBirthDate.Text = "";
-            tboxMobileNo.Text = "";
-            tboxEmail.Text = "";
-            tboxRegion.Text = "";
-            tboxCity.Text = "";
-            tboxBarangay.Text = "";
+            tboxFirstname.Text = "First name";
+            tboxFirstname.ForeColor = Color.Silver;
+            tboxmiddlename.Text = "Middle name";
+            tboxmiddlename.ForeColor = Color.Silver;
+            tboxLastname.Text = "Last name";
+            tboxLastname.ForeColor = Color.Silver;
+            tboxSuffix.Text = "Suffix(e.g. Sr., Jr., III)";
+            tboxSuffix.ForeColor = Color.Silver;
+            tboxBirthDate.Text = "Birth Date";
+            tboxBirthDate.ForeColor = Color.Silver;
+            tboxMobileNo.Text = "Mobile No.";
+            tboxMobileNo.ForeColor = Color.Silver;
+            tboxEmail.Text = "Email";
+            tboxEmail.ForeColor = Color.Silver;
+            tboxst.Text = "Street No.";
+            tboxst.ForeColor = Color.Silver;
+            tboxStname.Text = "Street/Town name";
+            tboxStname.ForeColor = Color.Silver;
+            tboxcity.Text = "City/Provinces";
+            tboxcity.ForeColor = Color.Silver;
         }
         private void tboxFirstname_Enter(object sender, EventArgs e)
         {
@@ -82,6 +92,149 @@ namespace Contact_Tracing
             {
                 tboxmiddlename.Text = "Middle name";
                 tboxmiddlename.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxLastname_Enter(object sender, EventArgs e)
+        {
+            if (tboxLastname.Text == "Last name")
+            {
+                tboxLastname.Text = "";
+                tboxLastname.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxLastname_Leave(object sender, EventArgs e)
+        {
+            if (tboxLastname.Text == "")
+            {
+                tboxLastname.Text = "Last name";
+                tboxLastname.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxSuffix_Enter(object sender, EventArgs e)
+        {
+            if (tboxSuffix.Text == "Suffix(e.g. Sr., Jr., III)")
+            {
+                tboxSuffix.Text = "";
+                tboxSuffix.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxSuffix_Leave(object sender, EventArgs e)
+        {
+            if (tboxSuffix.Text == "")
+            {
+                tboxSuffix.Text = "Suffix(e.g. Sr., Jr., III)";
+                tboxSuffix.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxBirthDate_Enter(object sender, EventArgs e)
+        {
+            if (tboxBirthDate.Text == "Birth Date")
+            {
+                tboxBirthDate.Text = "";
+                tboxBirthDate.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxBirthDate_Leave(object sender, EventArgs e)
+        {
+            if (tboxBirthDate.Text == "")
+            {
+                tboxBirthDate.Text = "Birth Date";
+                tboxBirthDate.ForeColor = Color.Silver;
+            }
+        }
+        private void tboxMobileNo_Enter(object sender, EventArgs e)
+        {
+            if (tboxMobileNo.Text == "Mobile No.")
+            {
+                tboxMobileNo.Text = "";
+                tboxMobileNo.ForeColor = Color.Black;
+            }
+        }
+        private void tboxMobileNo_Leave(object sender, EventArgs e)
+        {
+            if (tboxMobileNo.Text == "")
+            {
+                tboxMobileNo.Text = "Mobile No.";
+                tboxMobileNo.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxEmail_Enter(object sender, EventArgs e)
+        {
+            if (tboxEmail.Text == "Email")
+            {
+                tboxEmail.Text = "";
+                tboxEmail.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxEmail_Leave(object sender, EventArgs e)
+        {
+            if (tboxEmail.Text == "")
+            {
+                tboxEmail.Text = "Email";
+                tboxEmail.ForeColor = Color.Silver;
+            }
+
+        }
+
+        private void tboxst_Enter(object sender, EventArgs e)
+        {
+            if (tboxst.Text == "Street No.")
+            {
+                tboxst.Text = "";
+                tboxst.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxst_Leave(object sender, EventArgs e)
+        {
+            if (tboxst.Text == "")
+            {
+                tboxst.Text = "Street No.";
+                tboxst.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxStname_Enter(object sender, EventArgs e)
+        {
+            if (tboxStname.Text == "Street/Town name")
+            {
+                tboxStname.Text = "";
+                tboxStname.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxStname_Leave(object sender, EventArgs e)
+        {
+            if (tboxStname.Text == "")
+            {
+                tboxStname.Text = "Street/Town name";
+                tboxStname.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tboxcity_Enter(object sender, EventArgs e)
+        {
+            if (tboxcity.Text == "City/Provinces")
+            {
+                tboxcity.Text = "";
+                tboxcity.ForeColor = Color.Black;
+            }
+        }
+
+        private void tboxcity_Leave(object sender, EventArgs e)
+        {
+            if (tboxcity.Text == "")
+            {
+                tboxcity.Text = "City/Provinces";
+                tboxcity.ForeColor = Color.Silver;
             }
         }
     }

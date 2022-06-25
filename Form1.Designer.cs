@@ -52,11 +52,11 @@
             this.lbel8 = new System.Windows.Forms.Label();
             this.tboxEmail = new System.Windows.Forms.TextBox();
             this.lbel9 = new System.Windows.Forms.Label();
-            this.tboxRegion = new System.Windows.Forms.TextBox();
+            this.tboxst = new System.Windows.Forms.TextBox();
             this.lbel10 = new System.Windows.Forms.Label();
-            this.tboxCity = new System.Windows.Forms.TextBox();
+            this.tboxStname = new System.Windows.Forms.TextBox();
             this.lbel11 = new System.Windows.Forms.Label();
-            this.tboxBarangay = new System.Windows.Forms.TextBox();
+            this.tboxcity = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
             this.Datelbl = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DateTimePicker();
@@ -171,6 +171,8 @@
             this.tboxLastname.Size = new System.Drawing.Size(206, 29);
             this.tboxLastname.TabIndex = 9;
             this.tboxLastname.Text = "Last name";
+            this.tboxLastname.Enter += new System.EventHandler(this.tboxLastname_Enter);
+            this.tboxLastname.Leave += new System.EventHandler(this.tboxLastname_Leave);
             // 
             // lbel5
             // 
@@ -195,6 +197,8 @@
             this.tboxSuffix.Size = new System.Drawing.Size(206, 29);
             this.tboxSuffix.TabIndex = 11;
             this.tboxSuffix.Text = "Suffix(e.g. Sr., Jr., III)";
+            this.tboxSuffix.Enter += new System.EventHandler(this.tboxSuffix_Enter);
+            this.tboxSuffix.Leave += new System.EventHandler(this.tboxSuffix_Leave);
             // 
             // lbel6
             // 
@@ -219,6 +223,8 @@
             this.tboxBirthDate.Size = new System.Drawing.Size(206, 29);
             this.tboxBirthDate.TabIndex = 13;
             this.tboxBirthDate.Text = "Birth Date";
+            this.tboxBirthDate.Enter += new System.EventHandler(this.tboxBirthDate_Enter);
+            this.tboxBirthDate.Leave += new System.EventHandler(this.tboxBirthDate_Leave);
             // 
             // lbel7
             // 
@@ -243,6 +249,8 @@
             this.tboxMobileNo.Size = new System.Drawing.Size(206, 29);
             this.tboxMobileNo.TabIndex = 15;
             this.tboxMobileNo.Text = "Mobile No.";
+            this.tboxMobileNo.Enter += new System.EventHandler(this.tboxMobileNo_Enter);
+            this.tboxMobileNo.Leave += new System.EventHandler(this.tboxMobileNo_Leave);
             // 
             // lbel2
             // 
@@ -293,6 +301,8 @@
             this.tboxEmail.Size = new System.Drawing.Size(312, 29);
             this.tboxEmail.TabIndex = 19;
             this.tboxEmail.Text = "Email";
+            this.tboxEmail.Enter += new System.EventHandler(this.tboxEmail_Enter);
+            this.tboxEmail.Leave += new System.EventHandler(this.tboxEmail_Leave);
             // 
             // lbel9
             // 
@@ -307,16 +317,18 @@
             this.lbel9.Text = "St No.";
             this.lbel9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tboxRegion
+            // tboxst
             // 
-            this.tboxRegion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxRegion.ForeColor = System.Drawing.Color.Silver;
-            this.tboxRegion.Location = new System.Drawing.Point(16, 327);
-            this.tboxRegion.Multiline = true;
-            this.tboxRegion.Name = "tboxRegion";
-            this.tboxRegion.Size = new System.Drawing.Size(206, 29);
-            this.tboxRegion.TabIndex = 21;
-            this.tboxRegion.Text = "Region";
+            this.tboxst.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxst.ForeColor = System.Drawing.Color.Silver;
+            this.tboxst.Location = new System.Drawing.Point(16, 327);
+            this.tboxst.Multiline = true;
+            this.tboxst.Name = "tboxst";
+            this.tboxst.Size = new System.Drawing.Size(206, 29);
+            this.tboxst.TabIndex = 21;
+            this.tboxst.Text = "Street No.";
+            this.tboxst.Enter += new System.EventHandler(this.tboxst_Enter);
+            this.tboxst.Leave += new System.EventHandler(this.tboxst_Leave);
             // 
             // lbel10
             // 
@@ -331,16 +343,18 @@
             this.lbel10.Text = "Street/Town Name";
             this.lbel10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tboxCity
+            // tboxStname
             // 
-            this.tboxCity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxCity.ForeColor = System.Drawing.Color.Silver;
-            this.tboxCity.Location = new System.Drawing.Point(263, 327);
-            this.tboxCity.Multiline = true;
-            this.tboxCity.Name = "tboxCity";
-            this.tboxCity.Size = new System.Drawing.Size(206, 29);
-            this.tboxCity.TabIndex = 23;
-            this.tboxCity.Text = "City";
+            this.tboxStname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxStname.ForeColor = System.Drawing.Color.Silver;
+            this.tboxStname.Location = new System.Drawing.Point(263, 327);
+            this.tboxStname.Multiline = true;
+            this.tboxStname.Name = "tboxStname";
+            this.tboxStname.Size = new System.Drawing.Size(206, 29);
+            this.tboxStname.TabIndex = 23;
+            this.tboxStname.Text = "Street/Town name";
+            this.tboxStname.Enter += new System.EventHandler(this.tboxStname_Enter);
+            this.tboxStname.Leave += new System.EventHandler(this.tboxStname_Leave);
             // 
             // lbel11
             // 
@@ -355,16 +369,18 @@
             this.lbel11.Text = "City/Provinces";
             this.lbel11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tboxBarangay
+            // tboxcity
             // 
-            this.tboxBarangay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxBarangay.ForeColor = System.Drawing.Color.Silver;
-            this.tboxBarangay.Location = new System.Drawing.Point(505, 327);
-            this.tboxBarangay.Multiline = true;
-            this.tboxBarangay.Name = "tboxBarangay";
-            this.tboxBarangay.Size = new System.Drawing.Size(206, 29);
-            this.tboxBarangay.TabIndex = 25;
-            this.tboxBarangay.Text = "Barangay";
+            this.tboxcity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxcity.ForeColor = System.Drawing.Color.Silver;
+            this.tboxcity.Location = new System.Drawing.Point(505, 327);
+            this.tboxcity.Multiline = true;
+            this.tboxcity.Name = "tboxcity";
+            this.tboxcity.Size = new System.Drawing.Size(206, 29);
+            this.tboxcity.TabIndex = 25;
+            this.tboxcity.Text = "City/Provinces";
+            this.tboxcity.Enter += new System.EventHandler(this.tboxcity_Enter);
+            this.tboxcity.Leave += new System.EventHandler(this.tboxcity_Leave);
             // 
             // btn1
             // 
@@ -408,11 +424,11 @@
             this.Controls.Add(this.Date);
             this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.tboxBarangay);
+            this.Controls.Add(this.tboxcity);
             this.Controls.Add(this.lbel11);
-            this.Controls.Add(this.tboxCity);
+            this.Controls.Add(this.tboxStname);
             this.Controls.Add(this.lbel10);
-            this.Controls.Add(this.tboxRegion);
+            this.Controls.Add(this.tboxst);
             this.Controls.Add(this.lbel9);
             this.Controls.Add(this.tboxEmail);
             this.Controls.Add(this.lbel8);
@@ -470,11 +486,11 @@
         private System.Windows.Forms.Label lbel8;
         private System.Windows.Forms.TextBox tboxEmail;
         private System.Windows.Forms.Label lbel9;
-        private System.Windows.Forms.TextBox tboxRegion;
+        private System.Windows.Forms.TextBox tboxst;
         private System.Windows.Forms.Label lbel10;
-        private System.Windows.Forms.TextBox tboxCity;
+        private System.Windows.Forms.TextBox tboxStname;
         private System.Windows.Forms.Label lbel11;
-        private System.Windows.Forms.TextBox tboxBarangay;
+        private System.Windows.Forms.TextBox tboxcity;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label Datelbl;
         private System.Windows.Forms.DateTimePicker Date;
