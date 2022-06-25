@@ -17,12 +17,5 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            StreamReader reader = new StreamReader(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\Stream reader\.txt");
-            
-            reader.ReadLine();
-        }
     }
 }
