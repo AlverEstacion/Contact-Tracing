@@ -448,6 +448,8 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Mntrp1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm1";
             this.Text = "Contact Tracing";
             this.contextMenuStrip1.ResumeLayout(false);

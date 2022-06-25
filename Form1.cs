@@ -36,6 +36,7 @@ namespace Contact_Tracing
             file.WriteLine("Region: " + tboxst.Text);
             file.WriteLine("City: " + tboxStname.Text);
             file.WriteLine("Barangay: " + tboxcity.Text);
+            file.WriteLine("Date: " + Date.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
             tboxFirstname.Text = "First name";
