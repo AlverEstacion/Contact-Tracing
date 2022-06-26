@@ -194,7 +194,7 @@
             this.tboxBirthDate.Name = "tboxBirthDate";
             this.tboxBirthDate.Size = new System.Drawing.Size(206, 29);
             this.tboxBirthDate.TabIndex = 13;
-            this.tboxBirthDate.Text = "Birth Date";
+            this.tboxBirthDate.Text = "MM/dd/yyy";
             this.tboxBirthDate.Enter += new System.EventHandler(this.tboxBirthDate_Enter);
             this.tboxBirthDate.Leave += new System.EventHandler(this.tboxBirthDate_Leave);
             // 

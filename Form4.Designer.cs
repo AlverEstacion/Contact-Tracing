@@ -34,19 +34,24 @@
             // lblbydate
             // 
             this.lblbydate.AutoSize = true;
-            this.lblbydate.Location = new System.Drawing.Point(110, 89);
+            this.lblbydate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbydate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.lblbydate.Location = new System.Drawing.Point(56, 42);
             this.lblbydate.Name = "lblbydate";
-            this.lblbydate.Size = new System.Drawing.Size(0, 13);
+            this.lblbydate.Size = new System.Drawing.Size(0, 19);
             this.lblbydate.TabIndex = 0;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
+            this.ClientSize = new System.Drawing.Size(281, 475);
             this.Controls.Add(this.lblbydate);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.ShowIcon = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 

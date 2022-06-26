@@ -52,13 +52,16 @@
             // 
             // Passtbox
             // 
+            this.Passtbox.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Passtbox.Location = new System.Drawing.Point(122, 168);
             this.Passtbox.Name = "Passtbox";
-            this.Passtbox.Size = new System.Drawing.Size(122, 20);
+            this.Passtbox.PasswordChar = '*';
+            this.Passtbox.Size = new System.Drawing.Size(122, 21);
             this.Passtbox.TabIndex = 1;
             // 
             // Usertbox
             // 
+            this.Usertbox.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Usertbox.Location = new System.Drawing.Point(122, 142);
             this.Usertbox.Name = "Usertbox";
             this.Usertbox.Size = new System.Drawing.Size(122, 20);

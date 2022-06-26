@@ -128,7 +128,7 @@ namespace Contact_Tracing
 
         private void tboxBirthDate_Enter(object sender, EventArgs e)
         {
-            if (tboxBirthDate.Text == "Birth Date")
+            if (tboxBirthDate.Text == "MM/dd/yyy")
             {
                 tboxBirthDate.Text = "";
                 tboxBirthDate.ForeColor = Color.Black;
@@ -139,7 +139,7 @@ namespace Contact_Tracing
         {
             if (tboxBirthDate.Text == "")
             {
-                tboxBirthDate.Text = "Birth Date";
+                tboxBirthDate.Text = "MM/dd/yyyy";
                 tboxBirthDate.ForeColor = Color.Silver;
             }
         }
