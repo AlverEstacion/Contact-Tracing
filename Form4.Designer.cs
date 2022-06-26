@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing
 {
-    partial class Form2
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ShwallBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // ShwallBtn
-            // 
-            this.ShwallBtn.Location = new System.Drawing.Point(46, 143);
-            this.ShwallBtn.Name = "ShwallBtn";
-            this.ShwallBtn.Size = new System.Drawing.Size(121, 54);
-            this.ShwallBtn.TabIndex = 1;
-            this.ShwallBtn.Text = "Show";
-            this.ShwallBtn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 100);
+            this.label1.Location = new System.Drawing.Point(232, 117);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Show All Data Gathered from Contact Tracing";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 0;
             // 
-            // Form2
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(482, 446);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ShwallBtn);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Form4";
+            this.Text = "Form4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button ShwallBtn;
+
         private System.Windows.Forms.Label label1;
     }
 }
