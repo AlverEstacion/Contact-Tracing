@@ -57,7 +57,7 @@ namespace Contact_Tracing
                 {
                     Form4 date = new Form4();
                     date.ShowDialog();
-                }   
+                }
             }
         }
     }
