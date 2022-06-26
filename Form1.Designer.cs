@@ -419,7 +419,7 @@
             this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.Date.Location = new System.Drawing.Point(831, 355);
             this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(109, 20);
+            this.Date.Size = new System.Drawing.Size(91, 20);
             this.Date.TabIndex = 31;
             // 
             // pictureBox1

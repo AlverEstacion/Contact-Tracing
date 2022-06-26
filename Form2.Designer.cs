@@ -30,6 +30,8 @@
         {
             this.ShwallBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.datebtn = new System.Windows.Forms.Button();
+            this.frm2Date = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // ShwallBtn
@@ -51,12 +53,33 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Show All Data Gathered from Contact Tracing";
             // 
+            // datebtn
+            // 
+            this.datebtn.Location = new System.Drawing.Point(43, 260);
+            this.datebtn.Name = "datebtn";
+            this.datebtn.Size = new System.Drawing.Size(146, 61);
+            this.datebtn.TabIndex = 3;
+            this.datebtn.Text = "Submit";
+            this.datebtn.UseVisualStyleBackColor = true;
+            this.datebtn.Click += new System.EventHandler(this.datebtn_Click);
+            // 
+            // frm2Date
+            // 
+            this.frm2Date.CustomFormat = "MM/dd/yyyy";
+            this.frm2Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.frm2Date.Location = new System.Drawing.Point(62, 234);
+            this.frm2Date.Name = "frm2Date";
+            this.frm2Date.Size = new System.Drawing.Size(102, 20);
+            this.frm2Date.TabIndex = 4;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(482, 446);
+            this.Controls.Add(this.frm2Date);
+            this.Controls.Add(this.datebtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ShwallBtn);
             this.Name = "Form2";
@@ -69,5 +92,7 @@
         #endregion
         private System.Windows.Forms.Button ShwallBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button datebtn;
+        private System.Windows.Forms.DateTimePicker frm2Date;
     }
 }
