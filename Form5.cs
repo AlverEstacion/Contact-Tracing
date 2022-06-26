@@ -24,7 +24,8 @@ namespace Contact_Tracing
                 Usertbox.Text = "";
                 Passtbox.Text = "";
                 Form2 records = new Form2();
-                records.ShowDialog();
+                this.Visible = false;
+                records.ShowDialog();           
             }
             else
             {
