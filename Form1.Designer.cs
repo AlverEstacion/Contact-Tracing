@@ -34,9 +34,6 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Mstrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Mntrp1 = new System.Windows.Forms.MenuStrip();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tboxFirstname = new System.Windows.Forms.TextBox();
             this.lbel3 = new System.Windows.Forms.Label();
             this.tboxmiddlename = new System.Windows.Forms.TextBox();
@@ -60,13 +57,15 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.Datelbl = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.usertbox = new System.Windows.Forms.TextBox();
-            this.passtbox = new System.Windows.Forms.TextBox();
             this.AdminBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LBLDSGN = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
-            this.Mntrp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -95,43 +94,11 @@
             this.Mstrip1.Size = new System.Drawing.Size(61, 4);
             this.Mstrip1.Text = "About";
             // 
-            // Mntrp1
-            // 
-            this.Mntrp1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Mntrp1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.Mntrp1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem1});
-            this.Mntrp1.Location = new System.Drawing.Point(0, 0);
-            this.Mntrp1.Name = "Mntrp1";
-            this.Mntrp1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.Mntrp1.Size = new System.Drawing.Size(986, 24);
-            this.Mntrp1.TabIndex = 3;
-            this.Mntrp1.Text = "menuStrip1";
-            // 
-            // helpToolStripMenuItem1
-            // 
-            this.helpToolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
-            this.helpToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem1});
-            this.helpToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.helpToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem1.Text = "Help";
-            this.helpToolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // aboutToolStripMenuItem1
-            // 
-            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem1.Text = "About";
-            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
-            // 
             // tboxFirstname
             // 
             this.tboxFirstname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxFirstname.ForeColor = System.Drawing.Color.Silver;
-            this.tboxFirstname.Location = new System.Drawing.Point(29, 278);
+            this.tboxFirstname.Location = new System.Drawing.Point(45, 226);
             this.tboxFirstname.Multiline = true;
             this.tboxFirstname.Name = "tboxFirstname";
             this.tboxFirstname.Size = new System.Drawing.Size(206, 29);
@@ -143,10 +110,10 @@
             // lbel3
             // 
             this.lbel3.AutoSize = true;
-            this.lbel3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel3.Location = new System.Drawing.Point(261, 251);
+            this.lbel3.Location = new System.Drawing.Point(268, 199);
             this.lbel3.Name = "lbel3";
             this.lbel3.Size = new System.Drawing.Size(129, 24);
             this.lbel3.TabIndex = 6;
@@ -157,7 +124,7 @@
             // 
             this.tboxmiddlename.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxmiddlename.ForeColor = System.Drawing.Color.Silver;
-            this.tboxmiddlename.Location = new System.Drawing.Point(261, 278);
+            this.tboxmiddlename.Location = new System.Drawing.Point(268, 226);
             this.tboxmiddlename.Multiline = true;
             this.tboxmiddlename.Name = "tboxmiddlename";
             this.tboxmiddlename.Size = new System.Drawing.Size(206, 29);
@@ -170,7 +137,7 @@
             // 
             this.tboxLastname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxLastname.ForeColor = System.Drawing.Color.Silver;
-            this.tboxLastname.Location = new System.Drawing.Point(497, 278);
+            this.tboxLastname.Location = new System.Drawing.Point(491, 226);
             this.tboxLastname.Multiline = true;
             this.tboxLastname.Name = "tboxLastname";
             this.tboxLastname.Size = new System.Drawing.Size(206, 29);
@@ -182,10 +149,10 @@
             // lbel5
             // 
             this.lbel5.AutoSize = true;
-            this.lbel5.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel5.Location = new System.Drawing.Point(728, 251);
+            this.lbel5.Location = new System.Drawing.Point(41, 264);
             this.lbel5.Name = "lbel5";
             this.lbel5.Size = new System.Drawing.Size(62, 24);
             this.lbel5.TabIndex = 10;
@@ -196,7 +163,7 @@
             // 
             this.tboxSuffix.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxSuffix.ForeColor = System.Drawing.Color.Silver;
-            this.tboxSuffix.Location = new System.Drawing.Point(732, 278);
+            this.tboxSuffix.Location = new System.Drawing.Point(45, 291);
             this.tboxSuffix.Multiline = true;
             this.tboxSuffix.Name = "tboxSuffix";
             this.tboxSuffix.Size = new System.Drawing.Size(206, 29);
@@ -208,10 +175,10 @@
             // lbel6
             // 
             this.lbel6.AutoSize = true;
-            this.lbel6.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel6.Location = new System.Drawing.Point(25, 328);
+            this.lbel6.Location = new System.Drawing.Point(41, 373);
             this.lbel6.Name = "lbel6";
             this.lbel6.Size = new System.Drawing.Size(104, 24);
             this.lbel6.TabIndex = 12;
@@ -222,7 +189,7 @@
             // 
             this.tboxBirthDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxBirthDate.ForeColor = System.Drawing.Color.Silver;
-            this.tboxBirthDate.Location = new System.Drawing.Point(29, 355);
+            this.tboxBirthDate.Location = new System.Drawing.Point(45, 400);
             this.tboxBirthDate.Multiline = true;
             this.tboxBirthDate.Name = "tboxBirthDate";
             this.tboxBirthDate.Size = new System.Drawing.Size(206, 29);
@@ -234,10 +201,10 @@
             // lbel7
             // 
             this.lbel7.AutoSize = true;
-            this.lbel7.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbel7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel7.Location = new System.Drawing.Point(261, 328);
+            this.lbel7.ForeColor = System.Drawing.Color.Black;
+            this.lbel7.Location = new System.Drawing.Point(268, 373);
             this.lbel7.Name = "lbel7";
             this.lbel7.Size = new System.Drawing.Size(148, 24);
             this.lbel7.TabIndex = 14;
@@ -248,7 +215,7 @@
             // 
             this.tboxMobileNo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxMobileNo.ForeColor = System.Drawing.Color.Silver;
-            this.tboxMobileNo.Location = new System.Drawing.Point(265, 355);
+            this.tboxMobileNo.Location = new System.Drawing.Point(272, 400);
             this.tboxMobileNo.Multiline = true;
             this.tboxMobileNo.Name = "tboxMobileNo";
             this.tboxMobileNo.Size = new System.Drawing.Size(206, 29);
@@ -260,10 +227,10 @@
             // lbel2
             // 
             this.lbel2.AutoSize = true;
-            this.lbel2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel2.Location = new System.Drawing.Point(25, 251);
+            this.lbel2.Location = new System.Drawing.Point(41, 199);
             this.lbel2.Name = "lbel2";
             this.lbel2.Size = new System.Drawing.Size(110, 24);
             this.lbel2.TabIndex = 16;
@@ -273,10 +240,10 @@
             // lbel4
             // 
             this.lbel4.AutoSize = true;
-            this.lbel4.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel4.Location = new System.Drawing.Point(493, 251);
+            this.lbel4.Location = new System.Drawing.Point(487, 199);
             this.lbel4.Name = "lbel4";
             this.lbel4.Size = new System.Drawing.Size(108, 24);
             this.lbel4.TabIndex = 17;
@@ -286,10 +253,10 @@
             // lbel8
             // 
             this.lbel8.AutoSize = true;
-            this.lbel8.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel8.Location = new System.Drawing.Point(493, 328);
+            this.lbel8.Location = new System.Drawing.Point(41, 447);
             this.lbel8.Name = "lbel8";
             this.lbel8.Size = new System.Drawing.Size(62, 24);
             this.lbel8.TabIndex = 18;
@@ -300,7 +267,7 @@
             // 
             this.tboxEmail.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxEmail.ForeColor = System.Drawing.Color.Silver;
-            this.tboxEmail.Location = new System.Drawing.Point(497, 355);
+            this.tboxEmail.Location = new System.Drawing.Point(45, 474);
             this.tboxEmail.Multiline = true;
             this.tboxEmail.Name = "tboxEmail";
             this.tboxEmail.Size = new System.Drawing.Size(312, 29);
@@ -312,10 +279,10 @@
             // lbel9
             // 
             this.lbel9.AutoSize = true;
-            this.lbel9.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel9.Location = new System.Drawing.Point(25, 408);
+            this.lbel9.Location = new System.Drawing.Point(41, 563);
             this.lbel9.Name = "lbel9";
             this.lbel9.Size = new System.Drawing.Size(65, 24);
             this.lbel9.TabIndex = 20;
@@ -326,7 +293,7 @@
             // 
             this.tboxst.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxst.ForeColor = System.Drawing.Color.Silver;
-            this.tboxst.Location = new System.Drawing.Point(29, 435);
+            this.tboxst.Location = new System.Drawing.Point(45, 590);
             this.tboxst.Multiline = true;
             this.tboxst.Name = "tboxst";
             this.tboxst.Size = new System.Drawing.Size(206, 29);
@@ -338,10 +305,10 @@
             // lbel10
             // 
             this.lbel10.AutoSize = true;
-            this.lbel10.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel10.Location = new System.Drawing.Point(261, 408);
+            this.lbel10.Location = new System.Drawing.Point(474, 563);
             this.lbel10.Name = "lbel10";
             this.lbel10.Size = new System.Drawing.Size(176, 24);
             this.lbel10.TabIndex = 22;
@@ -352,7 +319,7 @@
             // 
             this.tboxStname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxStname.ForeColor = System.Drawing.Color.Silver;
-            this.tboxStname.Location = new System.Drawing.Point(265, 435);
+            this.tboxStname.Location = new System.Drawing.Point(478, 590);
             this.tboxStname.Multiline = true;
             this.tboxStname.Name = "tboxStname";
             this.tboxStname.Size = new System.Drawing.Size(206, 29);
@@ -364,10 +331,10 @@
             // lbel11
             // 
             this.lbel11.AutoSize = true;
-            this.lbel11.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lbel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel11.Location = new System.Drawing.Point(493, 408);
+            this.lbel11.Location = new System.Drawing.Point(255, 563);
             this.lbel11.Name = "lbel11";
             this.lbel11.Size = new System.Drawing.Size(141, 24);
             this.lbel11.TabIndex = 24;
@@ -378,7 +345,7 @@
             // 
             this.tboxcity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxcity.ForeColor = System.Drawing.Color.Silver;
-            this.tboxcity.Location = new System.Drawing.Point(497, 435);
+            this.tboxcity.Location = new System.Drawing.Point(259, 590);
             this.tboxcity.Multiline = true;
             this.tboxcity.Name = "tboxcity";
             this.tboxcity.Size = new System.Drawing.Size(206, 29);
@@ -389,12 +356,12 @@
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
             this.btn1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btn1.Location = new System.Drawing.Point(806, 493);
+            this.btn1.ForeColor = System.Drawing.Color.White;
+            this.btn1.Location = new System.Drawing.Point(568, 657);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(149, 73);
+            this.btn1.Size = new System.Drawing.Size(141, 58);
             this.btn1.TabIndex = 28;
             this.btn1.Text = "Submit";
             this.btn1.UseVisualStyleBackColor = false;
@@ -402,10 +369,10 @@
             // 
             // Datelbl
             // 
-            this.Datelbl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.Datelbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.Datelbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Datelbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Datelbl.Location = new System.Drawing.Point(831, 327);
+            this.Datelbl.Location = new System.Drawing.Point(491, 374);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Datelbl.Size = new System.Drawing.Size(77, 25);
@@ -417,50 +384,17 @@
             // 
             this.Date.CustomFormat = "MM-dd-yyyy";
             this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Date.Location = new System.Drawing.Point(831, 355);
+            this.Date.Location = new System.Drawing.Point(491, 402);
             this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(91, 20);
+            this.Date.Size = new System.Drawing.Size(104, 20);
             this.Date.TabIndex = 31;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 227);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(974, 361);
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
-            // 
-            // usertbox
-            // 
-            this.usertbox.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usertbox.ForeColor = System.Drawing.Color.Silver;
-            this.usertbox.Location = new System.Drawing.Point(13, 71);
-            this.usertbox.Name = "usertbox";
-            this.usertbox.Size = new System.Drawing.Size(111, 21);
-            this.usertbox.TabIndex = 35;
-            this.usertbox.Text = "Username";
-            this.usertbox.Enter += new System.EventHandler(this.usertbox_Enter);
-            this.usertbox.Leave += new System.EventHandler(this.usertbox_Leave);
-            // 
-            // passtbox
-            // 
-            this.passtbox.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passtbox.ForeColor = System.Drawing.Color.Silver;
-            this.passtbox.Location = new System.Drawing.Point(12, 97);
-            this.passtbox.Name = "passtbox";
-            this.passtbox.PasswordChar = '*';
-            this.passtbox.Size = new System.Drawing.Size(111, 21);
-            this.passtbox.TabIndex = 36;
-            this.passtbox.Text = "Password";
-            this.passtbox.Enter += new System.EventHandler(this.passtbox_Enter);
-            this.passtbox.Leave += new System.EventHandler(this.passtbox_Leave);
             // 
             // AdminBTN
             // 
-            this.AdminBTN.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.AdminBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
             this.AdminBTN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminBTN.Location = new System.Drawing.Point(12, 36);
+            this.AdminBTN.ForeColor = System.Drawing.Color.White;
+            this.AdminBTN.Location = new System.Drawing.Point(598, 154);
             this.AdminBTN.Name = "AdminBTN";
             this.AdminBTN.Size = new System.Drawing.Size(111, 29);
             this.AdminBTN.TabIndex = 37;
@@ -468,15 +402,53 @@
             this.AdminBTN.UseVisualStyleBackColor = false;
             this.AdminBTN.Click += new System.EventHandler(this.AdminBTN_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 189);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(685, 146);
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.pictureBox2.Location = new System.Drawing.Point(24, 357);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(685, 164);
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
+            // 
+            // LBLDSGN
+            // 
+            this.LBLDSGN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.LBLDSGN.Font = new System.Drawing.Font("Segoe Script", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLDSGN.ForeColor = System.Drawing.Color.White;
+            this.LBLDSGN.Location = new System.Drawing.Point(43, 44);
+            this.LBLDSGN.Name = "LBLDSGN";
+            this.LBLDSGN.Size = new System.Drawing.Size(641, 107);
+            this.LBLDSGN.TabIndex = 39;
+            this.LBLDSGN.Text = "CONTACT TRACING";
+            this.LBLDSGN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 546);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(685, 105);
+            this.pictureBox3.TabIndex = 42;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // frm1
             // 
-            this.BackColor = System.Drawing.Color.Sienna;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(986, 600);
+            this.ClientSize = new System.Drawing.Size(731, 722);
+            this.Controls.Add(this.LBLDSGN);
             this.Controls.Add(this.AdminBTN);
-            this.Controls.Add(this.passtbox);
-            this.Controls.Add(this.usertbox);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.btn1);
@@ -500,21 +472,21 @@
             this.Controls.Add(this.tboxmiddlename);
             this.Controls.Add(this.lbel3);
             this.Controls.Add(this.tboxFirstname);
-            this.Controls.Add(this.Mntrp1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.Mntrp1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm1";
             this.Text = "Contact Tracing";
-            this.Load += new System.EventHandler(this.frm1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.Mntrp1.ResumeLayout(false);
-            this.Mntrp1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,9 +502,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip Mstrip1;
-        private System.Windows.Forms.MenuStrip Mntrp1;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.TextBox tboxFirstname;
         private System.Windows.Forms.Label lbel3;
         private System.Windows.Forms.TextBox tboxmiddlename;
@@ -556,10 +525,11 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label Datelbl;
         private System.Windows.Forms.DateTimePicker Date;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox usertbox;
-        private System.Windows.Forms.TextBox passtbox;
         private System.Windows.Forms.Button AdminBTN;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label LBLDSGN;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

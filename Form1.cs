@@ -17,12 +17,6 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
-
-        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Contact Trace was made by Jose Alver H. Estacion", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
         private void btn1_Click(object sender, EventArgs e)
         {
             System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\" + tboxLastname.Text + ", " + tboxFirstname.Text + ".txt", true);
@@ -238,61 +232,16 @@ namespace Contact_Tracing
                 tboxcity.ForeColor = Color.Silver;
             }
         }
-        private void usertbox_Enter(object sender, EventArgs e)
-        {
-            if (usertbox.Text == "Username")
-            {
-                usertbox.Text = "";
-                usertbox.ForeColor = Color.Black;
-            }
-        }
 
-        private void usertbox_Leave(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (usertbox.Text == "")
-            {
-                usertbox.Text = "Username";
-                usertbox.ForeColor = Color.Silver;
-            }
-        }
 
-        private void passtbox_Enter(object sender, EventArgs e)
-        {
-            if (passtbox.Text == "Password")
-            {
-                passtbox.Text = "";
-                passtbox.ForeColor = Color.Black;
-            }
-        }
-
-        private void passtbox_Leave(object sender, EventArgs e)
-        {
-            if (passtbox.Text == "")
-            {
-                passtbox.Text = "Password";
-                passtbox.ForeColor = Color.Silver;
-            }
         }
 
         private void AdminBTN_Click(object sender, EventArgs e)
         {
-            if (usertbox.Text == "Alver Estacion")
-            {
-                if (passtbox.Text == "alver123")
-                {
-                    Form2 info = new Form2();
-                    info.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Wrong Input");
-                }
-            }
-        }
-
-        private void frm1_Load(object sender, EventArgs e)
-        {
-
+            Form5 show = new Form5();
+            show.ShowDialog();
         }
     }
 }
