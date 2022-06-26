@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.alldataLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -50,10 +51,10 @@
             this.ClientSize = new System.Drawing.Size(266, 450);
             this.Controls.Add(this.alldataLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form3";
-            this.ShowIcon = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 

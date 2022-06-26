@@ -110,7 +110,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
-            this.ShowIcon = false;
             this.Text = "ADMIN";
             this.ResumeLayout(false);
 

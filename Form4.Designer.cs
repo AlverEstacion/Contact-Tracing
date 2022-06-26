@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.lblbydate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,10 +49,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(281, 475);
             this.Controls.Add(this.lblbydate);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form4";
-            this.ShowIcon = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 

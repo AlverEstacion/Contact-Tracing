@@ -310,7 +310,7 @@
             this.lbel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel10.Location = new System.Drawing.Point(474, 563);
+            this.lbel10.Location = new System.Drawing.Point(487, 563);
             this.lbel10.Name = "lbel10";
             this.lbel10.Size = new System.Drawing.Size(176, 24);
             this.lbel10.TabIndex = 22;
@@ -321,7 +321,7 @@
             // 
             this.tboxStname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxStname.ForeColor = System.Drawing.Color.Silver;
-            this.tboxStname.Location = new System.Drawing.Point(478, 590);
+            this.tboxStname.Location = new System.Drawing.Point(491, 590);
             this.tboxStname.Multiline = true;
             this.tboxStname.Name = "tboxStname";
             this.tboxStname.Size = new System.Drawing.Size(206, 29);
@@ -336,7 +336,7 @@
             this.lbel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.lbel11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbel11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbel11.Location = new System.Drawing.Point(255, 563);
+            this.lbel11.Location = new System.Drawing.Point(264, 563);
             this.lbel11.Name = "lbel11";
             this.lbel11.Size = new System.Drawing.Size(141, 24);
             this.lbel11.TabIndex = 24;
@@ -347,7 +347,7 @@
             // 
             this.tboxcity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tboxcity.ForeColor = System.Drawing.Color.Silver;
-            this.tboxcity.Location = new System.Drawing.Point(259, 590);
+            this.tboxcity.Location = new System.Drawing.Point(266, 590);
             this.tboxcity.Multiline = true;
             this.tboxcity.Name = "tboxcity";
             this.tboxcity.Size = new System.Drawing.Size(206, 29);
