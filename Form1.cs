@@ -233,11 +233,6 @@ namespace Contact_Tracing
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AdminBTN_Click(object sender, EventArgs e)
         {
             Form5 show = new Form5();

@@ -16,5 +16,22 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void Sbmtbtn_Click(object sender, EventArgs e)
+        {
+            if (Usertbox.Text == "Alver Estacion" && Passtbox.Text == "alver123")
+            {
+                Usertbox.Text = "";
+                Passtbox.Text = "";
+                Form2 records = new Form2();
+                records.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Input", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Usertbox.Text = "";
+                Passtbox.Text = "";
+            }
+        }
     }
 }
