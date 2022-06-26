@@ -289,5 +289,10 @@ namespace Contact_Tracing
                 }
             }
         }
+
+        private void frm1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

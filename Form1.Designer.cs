@@ -427,7 +427,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox1.Location = new System.Drawing.Point(12, 227);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(962, 354);
+            this.pictureBox1.Size = new System.Drawing.Size(974, 361);
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
@@ -503,12 +503,14 @@
             this.Controls.Add(this.Mntrp1);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Mntrp1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm1";
             this.Text = "Contact Tracing";
+            this.Load += new System.EventHandler(this.frm1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.Mntrp1.ResumeLayout(false);
             this.Mntrp1.PerformLayout();
