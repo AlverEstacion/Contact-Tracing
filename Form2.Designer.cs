@@ -34,12 +34,13 @@
             // 
             // ShwallBtn
             // 
-            this.ShwallBtn.Location = new System.Drawing.Point(46, 143);
+            this.ShwallBtn.Location = new System.Drawing.Point(43, 128);
             this.ShwallBtn.Name = "ShwallBtn";
             this.ShwallBtn.Size = new System.Drawing.Size(121, 54);
             this.ShwallBtn.TabIndex = 1;
             this.ShwallBtn.Text = "Show";
             this.ShwallBtn.UseVisualStyleBackColor = true;
+            this.ShwallBtn.Click += new System.EventHandler(this.ShwallBtn_Click);
             // 
             // label1
             // 

@@ -17,5 +17,11 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void ShwallBtn_Click(object sender, EventArgs e)
+        {
+            Form3 alldata = new Form3();
+            alldata.ShowDialog();
+        }
     }
 }
