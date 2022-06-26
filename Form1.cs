@@ -238,5 +238,23 @@ namespace Contact_Tracing
             Form5 show = new Form5();
             show.ShowDialog();
         }
+
+        private void agetbox_Enter(object sender, EventArgs e)
+        {
+            if (agetbox.Text == "Age")
+            {
+                agetbox.Text = "";
+                agetbox.ForeColor = Color.Black;
+            }
+        }
+
+        private void agetbox_Leave(object sender, EventArgs e)
+        {
+            if (agetbox.Text == "")
+            {
+                agetbox.Text = "Age";
+                agetbox.ForeColor= Color.Silver;
+            }
+        }
     }
 }

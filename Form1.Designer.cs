@@ -58,14 +58,16 @@
             this.Datelbl = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DateTimePicker();
             this.AdminBTN = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.boxdsn2 = new System.Windows.Forms.PictureBox();
+            this.pboxdsn1 = new System.Windows.Forms.PictureBox();
             this.LBLDSGN = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.ppboxdsn3 = new System.Windows.Forms.PictureBox();
+            this.agelbl = new System.Windows.Forms.Label();
+            this.agetbox = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppboxdsn3)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -402,23 +404,23 @@
             this.AdminBTN.UseVisualStyleBackColor = false;
             this.AdminBTN.Click += new System.EventHandler(this.AdminBTN_Click);
             // 
-            // pictureBox1
+            // boxdsn2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 189);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(685, 146);
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
+            this.boxdsn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.boxdsn2.Location = new System.Drawing.Point(24, 189);
+            this.boxdsn2.Name = "boxdsn2";
+            this.boxdsn2.Size = new System.Drawing.Size(685, 146);
+            this.boxdsn2.TabIndex = 40;
+            this.boxdsn2.TabStop = false;
             // 
-            // pictureBox2
+            // pboxdsn1
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 357);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(685, 164);
-            this.pictureBox2.TabIndex = 41;
-            this.pictureBox2.TabStop = false;
+            this.pboxdsn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.pboxdsn1.Location = new System.Drawing.Point(24, 357);
+            this.pboxdsn1.Name = "pboxdsn1";
+            this.pboxdsn1.Size = new System.Drawing.Size(685, 164);
+            this.pboxdsn1.TabIndex = 41;
+            this.pboxdsn1.TabStop = false;
             // 
             // LBLDSGN
             // 
@@ -432,20 +434,48 @@
             this.LBLDSGN.Text = "CONTACT TRACING";
             this.LBLDSGN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox3
+            // ppboxdsn3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 546);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(685, 105);
-            this.pictureBox3.TabIndex = 42;
-            this.pictureBox3.TabStop = false;
+            this.ppboxdsn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.ppboxdsn3.Location = new System.Drawing.Point(24, 546);
+            this.ppboxdsn3.Name = "ppboxdsn3";
+            this.ppboxdsn3.Size = new System.Drawing.Size(685, 105);
+            this.ppboxdsn3.TabIndex = 42;
+            this.ppboxdsn3.TabStop = false;
+            // 
+            // agelbl
+            // 
+            this.agelbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
+            this.agelbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agelbl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.agelbl.Location = new System.Drawing.Point(378, 447);
+            this.agelbl.Name = "agelbl";
+            this.agelbl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.agelbl.Size = new System.Drawing.Size(48, 25);
+            this.agelbl.TabIndex = 43;
+            this.agelbl.Text = "Age";
+            this.agelbl.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // agetbox
+            // 
+            this.agetbox.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agetbox.ForeColor = System.Drawing.Color.Silver;
+            this.agetbox.Location = new System.Drawing.Point(378, 475);
+            this.agetbox.Multiline = true;
+            this.agetbox.Name = "agetbox";
+            this.agetbox.Size = new System.Drawing.Size(48, 29);
+            this.agetbox.TabIndex = 44;
+            this.agetbox.Text = "Age";
+            this.agetbox.Enter += new System.EventHandler(this.agetbox_Enter);
+            this.agetbox.Leave += new System.EventHandler(this.agetbox_Leave);
             // 
             // frm1
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 722);
+            this.Controls.Add(this.agetbox);
+            this.Controls.Add(this.agelbl);
             this.Controls.Add(this.LBLDSGN);
             this.Controls.Add(this.AdminBTN);
             this.Controls.Add(this.Date);
@@ -471,9 +501,9 @@
             this.Controls.Add(this.tboxmiddlename);
             this.Controls.Add(this.lbel3);
             this.Controls.Add(this.tboxFirstname);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.boxdsn2);
+            this.Controls.Add(this.pboxdsn1);
+            this.Controls.Add(this.ppboxdsn3);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -483,9 +513,9 @@
             this.Name = "frm1";
             this.Text = "Contact Tracing";
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppboxdsn3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,10 +555,12 @@
         private System.Windows.Forms.Label Datelbl;
         private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Button AdminBTN;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox boxdsn2;
+        private System.Windows.Forms.PictureBox pboxdsn1;
         private System.Windows.Forms.Label LBLDSGN;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ppboxdsn3;
+        private System.Windows.Forms.Label agelbl;
+        private System.Windows.Forms.TextBox agetbox;
     }
 }
 
