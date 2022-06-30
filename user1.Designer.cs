@@ -43,7 +43,7 @@
             // Scanner
             // 
             this.Scanner.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Scanner.ImageLocation = "centerscreeen";
+            this.Scanner.ImageLocation = "";
             this.Scanner.Location = new System.Drawing.Point(182, 298);
             this.Scanner.Name = "Scanner";
             this.Scanner.Size = new System.Drawing.Size(375, 318);
