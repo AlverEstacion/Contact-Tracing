@@ -55,10 +55,16 @@ namespace Contact_Tracing
                 Result result = barcodeReader.Decode((Bitmap)Scanner.Image);
                 if (result != null)
                 {
+                    timer1.Stop();                  
+                    MessageBox.Show("Thank you for your response");
+                    string infos = result.ToString();
+                    StringBuilder builder = new StringBuilder(infos);
+                    infos = builder.ToString();
+                    string Showinfo = infos;
+                    MessageBox.Show(Showinfo);
                     StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\QrCodeSubmit.Txt");
-                    file.WriteLine(result.ToString());
+                    file.WriteLine(Showinfo);
                     file.Close();
-                    timer1.Stop();
                     if (captureDevice.IsRunning)
                         captureDevice.Stop();
                 }
