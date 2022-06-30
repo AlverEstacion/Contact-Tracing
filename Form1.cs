@@ -16,6 +16,7 @@ namespace Contact_Tracing
         public frm1()
         {
             InitializeComponent();
+            userc1.Hide();
         }
         private void btn1_Click(object sender, EventArgs e)
         {
@@ -255,6 +256,12 @@ namespace Contact_Tracing
                 agetbox.Text = "Age";
                 agetbox.ForeColor= Color.Silver;
             }
+        }
+
+        private void ScannerBTN_Click(object sender, EventArgs e)
+        {
+            userc1.Show();
+            userc1.BringToFront();
         }
     }
 }

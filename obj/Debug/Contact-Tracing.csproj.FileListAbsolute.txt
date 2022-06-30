@@ -14,3 +14,14 @@ C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form3.reso
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form4.resources
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form5.resources
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.user1.resources
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.dll
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.Video.dll
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\zxing.dll
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\zxing.presentation.dll
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.xml
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.Video.xml
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\zxing.xml
+C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\zxing.presentation.xml
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.csproj.CopyComplete

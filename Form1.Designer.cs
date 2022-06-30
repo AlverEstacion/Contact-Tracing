@@ -65,6 +65,7 @@
             this.agelbl = new System.Windows.Forms.Label();
             this.agetbox = new System.Windows.Forms.TextBox();
             this.ScannerBTN = new System.Windows.Forms.Button();
+            this.userc1 = new Contact_Tracing.user1();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).BeginInit();
@@ -475,12 +476,21 @@
             this.ScannerBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
             this.ScannerBTN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScannerBTN.ForeColor = System.Drawing.Color.White;
-            this.ScannerBTN.Location = new System.Drawing.Point(6, 6);
+            this.ScannerBTN.Location = new System.Drawing.Point(6, 8);
             this.ScannerBTN.Name = "ScannerBTN";
             this.ScannerBTN.Size = new System.Drawing.Size(111, 29);
             this.ScannerBTN.TabIndex = 45;
             this.ScannerBTN.Text = "Scanner";
             this.ScannerBTN.UseVisualStyleBackColor = false;
+            this.ScannerBTN.Click += new System.EventHandler(this.ScannerBTN_Click);
+            // 
+            // userc1
+            // 
+            this.userc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userc1.Location = new System.Drawing.Point(0, 0);
+            this.userc1.Name = "userc1";
+            this.userc1.Size = new System.Drawing.Size(731, 722);
+            this.userc1.TabIndex = 46;
             // 
             // frm1
             // 
@@ -518,6 +528,7 @@
             this.Controls.Add(this.boxdsn2);
             this.Controls.Add(this.pboxdsn1);
             this.Controls.Add(this.ppboxdsn3);
+            this.Controls.Add(this.userc1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -576,6 +587,7 @@
         private System.Windows.Forms.Label agelbl;
         private System.Windows.Forms.TextBox agetbox;
         private System.Windows.Forms.Button ScannerBTN;
+        private user1 userc1;
     }
 }
 
