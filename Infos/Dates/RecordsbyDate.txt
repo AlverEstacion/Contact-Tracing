@@ -1,12 +1,36 @@
+First name: HOHOHO
+Middle name: Middle name
+Last name: HEHEHEHE
+Suffix: Suffix(e.g. Sr., Jr., III)
+Birth date: MM/dd/yyy
+Mobile No.: Mobile No.
+Email: Email
+Region: Street No.
+City: Street/Town name
+Barangay: City/Provinces
+Date: 29/06/2022
+
 First name: Alver
-Middle name: Hervas
+Middle name: Her 
 Last name: Estacion
-Suffix: jr
-Birth date: 0909
-Mobile No.: 09090
-Email: asdasd
-Region: asdasd
-City: asdasd
-Barangay: asdasd
-Date: 25/06/2022
+Suffix: Suffix(e.g. Sr., Jr., III)
+Birth date: MM/dd/yyy
+Mobile No.: Mobile No.
+Email: Email
+Region: Street No.
+City: Street/Town name
+Barangay: City/Provinces
+Date: 27/06/2022
+
+First name: HOHOHO
+Middle name: Middle name
+Last name: HEHEHEHE
+Suffix: Suffix(e.g. Sr., Jr., III)
+Birth date: MM/dd/yyy
+Mobile No.: Mobile No.
+Email: Email
+Region: Street No.
+City: Street/Town name
+Barangay: City/Provinces
+Date: 29/06/2022
 

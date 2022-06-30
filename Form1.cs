@@ -41,7 +41,7 @@ namespace Contact_Tracing
             tboxLastname.ForeColor = Color.Silver;
             tboxSuffix.Text = "Suffix(e.g. Sr., Jr., III)";
             tboxSuffix.ForeColor = Color.Silver;
-            tboxBirthDate.Text = "Birth Date";
+            tboxBirthDate.Text = "MM/dd/yyyy";
             tboxBirthDate.ForeColor = Color.Silver;
             tboxMobileNo.Text = "Mobile No.";
             tboxMobileNo.ForeColor = Color.Silver;

@@ -46,7 +46,7 @@ namespace Contact_Tracing
             }
             else
             {
-                StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\Dates\RecordsbyDate.txt");
+                StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\Dates\RecordsbyDate.txt", true);
                 foreach (string contents in byDate)
                 {
                     file.WriteLine(contents);

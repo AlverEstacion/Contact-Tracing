@@ -1,0 +1,11 @@
+First name: Eloi
+Middle name: Hervas
+Last name: Estacion
+Suffix: non
+Birth date: 11/21/1998
+Mobile No.: wkwk
+Email: WKWKWK
+Region: ASDASD
+City: ASDSD
+Barangay: ASDS
+Date: 25/06/2022
