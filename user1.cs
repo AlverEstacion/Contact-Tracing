@@ -57,6 +57,7 @@ namespace Contact_Tracing
                 {
                     StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\QrCodeSubmit.Txt");
                     file.WriteLine(result.ToString());
+                    file.Close();
                     timer1.Stop();
                     if (captureDevice.IsRunning)
                         captureDevice.Stop();

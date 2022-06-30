@@ -47,6 +47,7 @@
             this.Scanner.Location = new System.Drawing.Point(182, 298);
             this.Scanner.Name = "Scanner";
             this.Scanner.Size = new System.Drawing.Size(375, 318);
+            this.Scanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Scanner.TabIndex = 0;
             this.Scanner.TabStop = false;
             // 
