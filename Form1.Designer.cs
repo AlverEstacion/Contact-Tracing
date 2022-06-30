@@ -64,6 +64,7 @@
             this.ppboxdsn3 = new System.Windows.Forms.PictureBox();
             this.agelbl = new System.Windows.Forms.Label();
             this.agetbox = new System.Windows.Forms.TextBox();
+            this.ScannerBTN = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).BeginInit();
@@ -469,11 +470,24 @@
             this.agetbox.Enter += new System.EventHandler(this.agetbox_Enter);
             this.agetbox.Leave += new System.EventHandler(this.agetbox_Leave);
             // 
+            // ScannerBTN
+            // 
+            this.ScannerBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.ScannerBTN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScannerBTN.ForeColor = System.Drawing.Color.White;
+            this.ScannerBTN.Location = new System.Drawing.Point(6, 6);
+            this.ScannerBTN.Name = "ScannerBTN";
+            this.ScannerBTN.Size = new System.Drawing.Size(111, 29);
+            this.ScannerBTN.TabIndex = 45;
+            this.ScannerBTN.Text = "Scanner";
+            this.ScannerBTN.UseVisualStyleBackColor = false;
+            // 
             // frm1
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 722);
+            this.Controls.Add(this.ScannerBTN);
             this.Controls.Add(this.agetbox);
             this.Controls.Add(this.agelbl);
             this.Controls.Add(this.LBLDSGN);
@@ -561,6 +575,7 @@
         private System.Windows.Forms.PictureBox ppboxdsn3;
         private System.Windows.Forms.Label agelbl;
         private System.Windows.Forms.TextBox agetbox;
+        private System.Windows.Forms.Button ScannerBTN;
     }
 }
 

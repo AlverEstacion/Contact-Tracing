@@ -13,3 +13,4 @@ C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form2.reso
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form3.resources
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form4.resources
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.Form5.resources
+C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.user1.resources
