@@ -65,11 +65,13 @@
             this.agelbl = new System.Windows.Forms.Label();
             this.agetbox = new System.Windows.Forms.TextBox();
             this.ScannerBTN = new System.Windows.Forms.Button();
+            this.codepbox = new System.Windows.Forms.PictureBox();
             this.userc1 = new Contact_Tracing.user1();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppboxdsn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.codepbox)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -484,8 +486,18 @@
             this.ScannerBTN.UseVisualStyleBackColor = false;
             this.ScannerBTN.Click += new System.EventHandler(this.ScannerBTN_Click);
             // 
+            // codepbox
+            // 
+            this.codepbox.Location = new System.Drawing.Point(157, 574);
+            this.codepbox.Name = "codepbox";
+            this.codepbox.Size = new System.Drawing.Size(135, 126);
+            this.codepbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.codepbox.TabIndex = 48;
+            this.codepbox.TabStop = false;
+            // 
             // userc1
             // 
+            this.userc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.userc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userc1.Location = new System.Drawing.Point(0, 0);
             this.userc1.Name = "userc1";
@@ -497,6 +509,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 722);
+            this.Controls.Add(this.codepbox);
             this.Controls.Add(this.ScannerBTN);
             this.Controls.Add(this.agetbox);
             this.Controls.Add(this.agelbl);
@@ -541,6 +554,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppboxdsn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.codepbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -588,6 +602,7 @@
         private System.Windows.Forms.TextBox agetbox;
         private System.Windows.Forms.Button ScannerBTN;
         private user1 userc1;
+        private System.Windows.Forms.PictureBox codepbox;
     }
 }
 

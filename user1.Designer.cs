@@ -36,6 +36,8 @@
             this.Devices = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.LastnameTbox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Scanner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -44,9 +46,9 @@
             // 
             this.Scanner.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Scanner.ImageLocation = "";
-            this.Scanner.Location = new System.Drawing.Point(182, 298);
+            this.Scanner.Location = new System.Drawing.Point(236, 297);
             this.Scanner.Name = "Scanner";
-            this.Scanner.Size = new System.Drawing.Size(375, 318);
+            this.Scanner.Size = new System.Drawing.Size(268, 242);
             this.Scanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Scanner.TabIndex = 0;
             this.Scanner.TabStop = false;
@@ -68,7 +70,7 @@
             this.StartBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
             this.StartBTN.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartBTN.ForeColor = System.Drawing.Color.White;
-            this.StartBTN.Location = new System.Drawing.Point(296, 661);
+            this.StartBTN.Location = new System.Drawing.Point(302, 635);
             this.StartBTN.Name = "StartBTN";
             this.StartBTN.Size = new System.Drawing.Size(141, 58);
             this.StartBTN.TabIndex = 41;
@@ -79,9 +81,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
-            this.pictureBox2.Location = new System.Drawing.Point(157, 269);
+            this.pictureBox2.Location = new System.Drawing.Point(219, 278);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(430, 377);
+            this.pictureBox2.Size = new System.Drawing.Size(303, 280);
             this.pictureBox2.TabIndex = 42;
             this.pictureBox2.TabStop = false;
             // 
@@ -111,11 +113,33 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // LastnameTbox
+            // 
+            this.LastnameTbox.Location = new System.Drawing.Point(274, 600);
+            this.LastnameTbox.Multiline = true;
+            this.LastnameTbox.Name = "LastnameTbox";
+            this.LastnameTbox.Size = new System.Drawing.Size(189, 29);
+            this.LastnameTbox.TabIndex = 45;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.label2.Location = new System.Drawing.Point(219, 562);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(306, 37);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Enter your last name";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // user1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LastnameTbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Devices);
             this.Controls.Add(this.StartBTN);
@@ -128,6 +152,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Scanner)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -140,5 +165,7 @@
         private System.Windows.Forms.ComboBox Devices;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox LastnameTbox;
+        private System.Windows.Forms.Label label2;
     }
 }

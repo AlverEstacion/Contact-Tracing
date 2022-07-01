@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing;
+using ZXing.QrCode;
+using QRCoder;
 
 namespace Contact_Tracing
 {
@@ -20,6 +23,14 @@ namespace Contact_Tracing
         }
         private void btn1_Click(object sender, EventArgs e)
         {
+            QRCodeGenerator code = new QRCodeGenerator();
+            var info = "First name: " + tboxFirstname.Text + Environment.NewLine + "Middle name: " + tboxmiddlename.Text + Environment.NewLine + "Last name: "
+                + tboxLastname.Text + Environment.NewLine + "Suffix: " + tboxSuffix.Text + Environment.NewLine + "Birth date: " + tboxBirthDate.Text + Environment.NewLine + "Mobile No.: " + tboxMobileNo.Text
+                + Environment.NewLine + "Email: " + tboxEmail.Text + Environment.NewLine + "St No.: " + tboxst.Text + Environment.NewLine + "Street/Town name: " + tboxStname.Text
+                + Environment.NewLine + "City/Provinces: " + tboxcity.Text + Environment.NewLine + "Date: " + Date.Text + Environment.NewLine;
+            QRCodeData data = code.CreateQrCode(info, QRCodeGenerator.ECCLevel.Q);
+            QRCode result = new QRCode(data);
+            codepbox.Image = result.GetGraphic(2);
             System.IO.StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\" + tboxLastname.Text + ", " + tboxFirstname.Text + ".txt", true);
             file.WriteLine("First name: " + tboxFirstname.Text);
             file.WriteLine("Middle name: " + tboxmiddlename.Text);
@@ -28,9 +39,9 @@ namespace Contact_Tracing
             file.WriteLine("Birth date: " + tboxBirthDate.Text);
             file.WriteLine("Mobile No.: " + tboxMobileNo.Text);
             file.WriteLine("Email: " + tboxEmail.Text);
-            file.WriteLine("Region: " + tboxst.Text);
-            file.WriteLine("City: " + tboxStname.Text);
-            file.WriteLine("Barangay: " + tboxcity.Text);
+            file.WriteLine("Street No.: " + tboxst.Text);
+            file.WriteLine("Street/Town name: " + tboxStname.Text);
+            file.WriteLine("City/Provinces: " + tboxcity.Text);
             file.WriteLine("Date: " + Date.Text);
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -53,7 +64,7 @@ namespace Contact_Tracing
             tboxStname.Text = "Street/Town name";
             tboxStname.ForeColor = Color.Silver;
             tboxcity.Text = "City/Provinces";
-            tboxcity.ForeColor = Color.Silver;
+            tboxcity.ForeColor = Color.Silver;         
         }
         private void tboxFirstname_Enter(object sender, EventArgs e)
         {

@@ -62,9 +62,10 @@ namespace Contact_Tracing
                     infos = builder.ToString();
                     string Showinfo = infos;
                     MessageBox.Show(Showinfo);
-                    StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\QrCodeSubmit.Txt");
+                    StreamWriter file = new StreamWriter(@"C:\Users\Alver\source\repos\Contact-Tracing\Infos\" + LastnameTbox.Text + ".txt", true);
                     file.WriteLine(Showinfo);
                     file.Close();
+                    timer1.Stop();
                     if (captureDevice.IsRunning)
                         captureDevice.Stop();
                 }
