@@ -105,12 +105,6 @@
     <Compile Include="user1.Designer.cs">
       <DependentUpon>user1.cs</DependentUpon>
     </Compile>
-    <Compile Include="user2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="user2.Designer.cs">
-      <DependentUpon>user2.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,9 +131,6 @@
     </Compile>
     <EmbeddedResource Include="user1.resx">
       <DependentUpon>user1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="user2.resx">
-      <DependentUpon>user2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

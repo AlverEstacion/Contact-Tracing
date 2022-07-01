@@ -27,7 +27,7 @@ namespace Contact_Tracing
             var info = "First name: " + tboxFirstname.Text + Environment.NewLine + "Middle name: " + tboxmiddlename.Text + Environment.NewLine + "Last name: "
                 + tboxLastname.Text + Environment.NewLine + "Suffix: " + tboxSuffix.Text + Environment.NewLine + "Birth date: " + tboxBirthDate.Text + Environment.NewLine + "Mobile No.: " + tboxMobileNo.Text
                 + Environment.NewLine + "Email: " + tboxEmail.Text + Environment.NewLine + "St No.: " + tboxst.Text + Environment.NewLine + "Street/Town name: " + tboxStname.Text
-                + Environment.NewLine + "City/Provinces: " + tboxcity.Text + Environment.NewLine + "Date: " + Date.Text + Environment.NewLine;
+                + Environment.NewLine + "City/Provinces: " + tboxcity.Text + Environment.NewLine + "Date: " + Date.Text + Environment.NewLine + "Age: " + agetbox.Text + Environment.NewLine;
             QRCodeData data = code.CreateQrCode(info, QRCodeGenerator.ECCLevel.Q);
             QRCode result = new QRCode(data);
             codepbox.Image = result.GetGraphic(2);
@@ -43,6 +43,7 @@ namespace Contact_Tracing
             file.WriteLine("Street/Town name: " + tboxStname.Text);
             file.WriteLine("City/Provinces: " + tboxcity.Text);
             file.WriteLine("Date: " + Date.Text);
+            file.WriteLine("Age: " + agetbox.Text); 
             file.Close();
             MessageBox.Show("Thankyou for your response", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
             tboxFirstname.Text = "First name";
@@ -64,7 +65,9 @@ namespace Contact_Tracing
             tboxStname.Text = "Street/Town name";
             tboxStname.ForeColor = Color.Silver;
             tboxcity.Text = "City/Provinces";
-            tboxcity.ForeColor = Color.Silver;         
+            tboxcity.ForeColor = Color.Silver;
+            agetbox.Text = "Age:";
+            agetbox.ForeColor = Color.Silver;
         }
         private void tboxFirstname_Enter(object sender, EventArgs e)
         {

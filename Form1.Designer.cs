@@ -67,6 +67,7 @@
             this.ScannerBTN = new System.Windows.Forms.Button();
             this.codepbox = new System.Windows.Forms.PictureBox();
             this.userc1 = new Contact_Tracing.user1();
+            this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.boxdsn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxdsn1)).BeginInit();
@@ -365,9 +366,9 @@
             this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
             this.btn1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.White;
-            this.btn1.Location = new System.Drawing.Point(568, 657);
+            this.btn1.Location = new System.Drawing.Point(566, 683);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(141, 58);
+            this.btn1.Size = new System.Drawing.Size(141, 81);
             this.btn1.TabIndex = 28;
             this.btn1.Text = "Submit";
             this.btn1.UseVisualStyleBackColor = false;
@@ -488,7 +489,9 @@
             // 
             // codepbox
             // 
-            this.codepbox.Location = new System.Drawing.Point(157, 574);
+            this.codepbox.BackColor = System.Drawing.Color.White;
+            this.codepbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.codepbox.Location = new System.Drawing.Point(26, 661);
             this.codepbox.Name = "codepbox";
             this.codepbox.Size = new System.Drawing.Size(135, 126);
             this.codepbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -501,14 +504,27 @@
             this.userc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userc1.Location = new System.Drawing.Point(0, 0);
             this.userc1.Name = "userc1";
-            this.userc1.Size = new System.Drawing.Size(731, 722);
+            this.userc1.Size = new System.Drawing.Size(725, 796);
             this.userc1.TabIndex = 46;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(89)))), ((int)(((byte)(94)))));
+            this.label2.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(179, 680);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(331, 81);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Your QR Code will be displayed here after you submit\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frm1
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(214)))), ((int)(((byte)(211)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(731, 722);
+            this.ClientSize = new System.Drawing.Size(725, 796);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.codepbox);
             this.Controls.Add(this.ScannerBTN);
             this.Controls.Add(this.agetbox);
@@ -603,6 +619,7 @@
         private System.Windows.Forms.Button ScannerBTN;
         private user1 userc1;
         private System.Windows.Forms.PictureBox codepbox;
+        private System.Windows.Forms.Label label2;
     }
 }
 

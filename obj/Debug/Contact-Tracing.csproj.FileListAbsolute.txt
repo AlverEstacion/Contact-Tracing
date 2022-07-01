@@ -25,5 +25,4 @@ C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\AForge.Video.DirectShow.xm
 C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\zxing.xml
 C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\zxing.presentation.xml
 C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact-Tracing.csproj.CopyComplete
-C:\Users\Alver\source\repos\Contact-Tracing\obj\Debug\Contact_Tracing.user2.resources
 C:\Users\Alver\source\repos\Contact-Tracing\bin\Debug\QRCoder.dll
